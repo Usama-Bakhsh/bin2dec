@@ -29,3 +29,5 @@ bin2dec("1010")  # returnerer 10
 ## Inspiration
 
 Dette projekt er inspireret af [Bin2Dec App](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md) fra [app-ideas](https://github.com/florinpop17/app-ideas) af Florin Pop.
+
+Regnemetoden for at gå fra binært til decimal er inspireret af denne [Wikihow artikel](https://www.wikihow.com/Convert-from-Binary-to-Decimal)

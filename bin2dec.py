@@ -1,3 +1,5 @@
+'''
+Gamle metode. Bruger position. Højre mod venstre
 def bin2dec(input_str):
     output = 0
     for position, digit in enumerate(input_str[::-1]):
@@ -5,7 +7,16 @@ def bin2dec(input_str):
             raise ValueError("Input skal være en binær streng, der kun indeholder '0' og '1'.")
         output += int(digit) * (2 ** position)
     return output
+'''
 
+# Dobbelt op metode. Venstre mod højre
+def bin2dec(input_str):
+    output = 0
+    for position, digit in enumerate(input_str):
+        if digit not in ['0', '1']:
+            raise ValueError("Input skal være en binær streng, der kun indeholder '0' og '1'.")
+        output = (output * 2) + int(digit)
+    return output
 
 if __name__ == "__main__":
     user_input = input("Indtast et binært tal: ")
